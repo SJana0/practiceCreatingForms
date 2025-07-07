@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись в фитнес-клуб</title>
+    <link rel = "stylesheet" href = "CSSIndexForm.css">
+</head>
+<body>
+    
+    <form>
+        <h1 class="boldT">Покупка абонемента клуба</h1>
+        <input class="mrgn" type="text" id="fname" size="50" required placeholder="Введите свое ФИО" >
+
+        <p class="boldT">Выберите ваш пол</p>
+        <div class = "Group"><input  required type="radio" name="sex" id="sx1" value="1" > Женский<br></div>
+        <div class = "Group"><input  type="radio" name="sex" id="sx2" value="2"> Мужской <br></div>
+
+        <input class="mrgn" type="tel" required placeholder="Введите свой номер телефона">
+        
+        <input class="mrgn" type="password" name="pass" id="pass" size="15" maxlength="10" placeholder="Введите пароль из сообщения" required>
+
+        <p class="boldT">Выберите срок абонемента</p>
+        <div class = "Group"><input  type="radio" name="term" id="mn1" value="1" required> 1 месяц<br></div>
+        <div class = "Group"><input  type="radio" name="term" id="mn2" value="2"> 3 месяца <br></div>
+        <div class = "Group"><input  type="radio" name="term" id="mn1" value="1"> 6 месяцев<br></div>
+        <div class = "Group"><input  type="radio" name="term" id="mn2" value="2"> 1 год <br></div>
+
+
+        <div class = "CenterT boldT"><p>Выберите приложения, которые вы бы хотели добавить к абонементу</p></div>
+        <div class = "Group"> <input  type="checkbox" name="GroupTrain"> Групповые тренировки<br></div>
+        <div class = "Group"> <input  type="checkbox" name="IndivTrain"> Персональныые тренировки с тренером<br></div>
+        <div class = "Group"><input type="checkbox" name="Limitless"> Безлимитный доступ во все клубы<br><br></div>
+
+        <p class="boldT">Выберите адрес тренажерного зала</p>
+        <div class = "Group mrgn"><select name="adress" size="1">
+            <option value="sub1">Новоизмайловский проспект 2</option>
+            <option value="sub2">Садовая 8</option>
+            <option value="sub3">Большая морская 54</option>
+            <option value="sub4">Московский проспект 34</option>
+            <option value="sub5">Ломаная 14</option>
+           </select></div>
+
+        <p class="CenterT boldT">Выберите желаемую дату начала тренировок</p>
+        <div class = "Group mrgn"> <input type="date" name="calendar" value="2025-07-11" max="2024-08-31" min="2024-07-11"></div>
+           
+        <p class="boldT">Откуда вы о нас узнали</p>
+        <textarea></textarea>
+
+        <div class = "Group"> <input  type="checkbox" name="Processing"  required> Я соглашаюсь на обработку персональных данных и получение сообщений<br></div>
+        <div class = "Group"><input type="checkbox" name="Msgs"> Получать уведомления на почту<br></div>
+
+        <input class="Button" type="submit" name="sub_butt" value="Отправить">
+    </form>
+</body>
+</html>

@@ -1,0 +1,120 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.boldT {
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 15px 0 8px 0;
+}
+
+.CenterT {
+    text-align: center;
+}
+
+.mrgn {
+    margin: 10px 0;
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.3s;
+}
+
+.mrgn:focus {
+    outline: none;
+    border-color: #2c3e50;
+}
+
+.Group {
+    margin: 8px 0;
+    padding: 8px 0;
+    color: #546e7a;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.1);
+}
+
+select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: white;
+    color: #546e7a;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    min-height: 80px;
+    resize: vertical;
+    color: #546e7a;
+}
+
+.Button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.Button:hover {
+    background-color: #1a252f;
+}
+
+input[type="date"] {
+    color: #546e7a;
+}
+
+/* Стили для выделения обязательных полей */
+input:required, select:required, textarea:required {
+    border-left: 3px solid #c8e6c9;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+    border-left: 3px solid #fff9c4;
+}
+
+input:valid, select:valid, textarea:valid {
+    border-left: 3px solid #c8e6c9;
+}
